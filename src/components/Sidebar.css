@@ -1,0 +1,69 @@
+/* src/components/Sidebar.css */
+/* src/components/Sidebar.css */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    height: 100vh;
+    position: fixed; /* Fix sidebar to the left */
+    left: 0; /* Align to the left */
+    top: 0;
+    border: none;
+  }
+  
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .icon {
+    font-size: 40px;
+    margin-bottom: 5px;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  /* Add Resume Icon Color */
+  .icon-container:nth-child(6) .icon {
+    color: #e67e22; /* Orange color for resume */
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+    color: #ffffff; /* Change to white on hover */
+  }
+  
+  .icon-text {
+    font-size: 14px;
+    color: #ffffff;
+  }
+  /* Make icons colorful */
+  .icon-container:nth-child(1) .icon {
+    color: #16a085; /* About - Terminal Green */
+  }
+  
+  .icon-container:nth-child(2) .icon {
+    color: #f39c12; /* Projects - Folder Yellow */
+  }
+  
+  .icon-container:nth-child(3) .icon {
+    color: #e74c3c; /* Connect - Notepad Red */
+  }
+  
+  .icon-container:nth-child(4) .icon {
+    color: #3333ff; /* GitHub Blue */
+  }
+  
+  .icon-container:nth-child(5) .icon {
+    color: #0077b5; /* LinkedIn Blue */
+  }
+  
+
+  

@@ -1,0 +1,112 @@
+/* src/Taskbar.css */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* Increased size */
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    z-index: 1001;
+  }
+  
+  .taskbar-icon {
+    margin: 0 15px;
+    font-size: 32px; /* Increased size */
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .taskbar-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .start-menu-full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  
+  /* Make icons colorful */
+  .taskbar-icon:nth-child(1) .fa-square {
+    color: #0078d4; /* Windows blue color */
+  }
+  
+  .taskbar-icon:nth-child(2) .fa-folder {
+    color: #f39c12; /* Folder yellow color */
+  }
+  
+  .taskbar-icon:nth-child(3) .fa-terminal {
+    color: #16a085; /* Terminal green color */
+  }
+  
+  .taskbar-icon:nth-child(4) .fa-sticky-note {
+    color: #c5200e; /* Notepad red color */
+  }
+  
+  .taskbar-icon:hover {
+    transform: scale(1.1);
+    color: #ffffff; /* Change color to white on hover */
+  }
+  
+  /* src/Taskbar.css */
+.start-menu {
+    position: fixed;
+    bottom: 100px; /* Adjust position based on taskbar height */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2e2e2e;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 8px; /* Rounded corners for windowed look */
+    z-index: 1000;
+  }
+  
+  .close-btn {
+    align-self: flex-end; /* Align the close button to the right */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .start-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    transition: transform 0.2s, color 0.2s;
+  }
+  
+  .start-menu-item .icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .start-menu-item:hover {
+    transform: scale(1.1);
+    color: #ddd;
+  }
+  

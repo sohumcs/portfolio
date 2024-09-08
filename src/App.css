@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+/* src/App.css */
+/* src/App.css */
+body {
+  background-image: url('./components/bg.jpg'); /* Ensure the correct image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensure the image covers the whole page */
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Fullscreen prompt styling */
+.fullscreen-prompt {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fullscreen-prompt button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fullscreen-prompt button:hover {
+  background-color: #e67e22;
+}
+
+.window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the windows */
+  width: 400px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+/* Other existing styles... */
+
+
+/* Other existing styles... */
+
+
+.window-header {
+  background-color: #555;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.window-body {
+  padding: 10px;
+}
+
+.about-window {
+  background-color: black;
+  color: green;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+
+.typing-text {
+  white-space: pre;
+  font-size: 18px;
+}
+
+.project-folder {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects-window {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.folder-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-folder:hover {
+  background-color: #3e3e3e;
+}
+
+.folder-icon {
+  margin-right: 10px;
+  color: #f39c12;
+}
+
+.project-view {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #2e2e2e;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.project-view a {
+  color: #00acee;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.project-view a:hover {
+  text-decoration: underline;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.back-button:hover {
+  background-color: #777;
+}
+
+.file-icon {
+  color: #f0a500; /* Example color */
+}
+
+.file a {
+  text-decoration: none; /* Remove underline */
+}
+
+.notepad-window {
+  background-color: #f5f5dc; /* Notepad background */
+  font-family: 'Courier New', Courier, monospace; /* Notepad font */
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.connect-window .window-body {
+  background-color: #f5f5dc;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  border: 1px solid #ccc;
 }

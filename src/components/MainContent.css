@@ -1,0 +1,10 @@
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #2d2d2d; /* Adjust the color according to your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
