@@ -178,9 +178,9 @@ const App = () => {
                       {selectedProject.name === 'Resume' ? (
                         <>
                           <FontAwesomeIcon icon={faFilePdf} className="file-icon" />
-                          <a href={selectedProject.repoLink} target="_blank" rel="noopener noreferrer">
+                          <a href= "C:\Users\Sohum Srivastava\Desktop\portfolio\my-portfolio\public\Resume.pdf" target="_blank" rel="noopener noreferrer">
                             View Resume
-                          </a>
+                          </a>  
                         </>
                       ) : (
                         <>

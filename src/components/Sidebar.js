@@ -28,10 +28,15 @@ const Sidebar = ({ openAbout, openProjects, openConnect }) => {
         <FontAwesomeIcon icon={faLinkedin} className="icon" />
         <span className="icon-text">LinkedIn</span>
       </div>
-      <div className="icon-container" onClick={() => window.location.href = '/mnt/data/Resume.pdf'} download>
-        <FontAwesomeIcon icon={faBook} className="icon" />
-        <span className="icon-text">Resume</span>
-      </div>
+      <div className="icon-container" onClick={() => {
+    const link = document.createElement('a');
+    link.href = "/Resume.pdf";  // Make sure this matches your file path
+    link.download = "Resume.pdf";  // The file name for the downloaded file
+    link.click();
+  }}>
+  <FontAwesomeIcon icon={faBook} className="icon" />
+  <span className="icon-text">Resume</span>
+</div>
     </div>
   );
 };
