@@ -35,25 +35,27 @@ const Taskbar = ({ openAbout, openProjects, openConnect }) => {
       {isStartMenuOpen && (
         <div className="start-menu">
           <button className="close-btn" onClick={handleStartMenuToggle}>X</button> {/* Close button */}
-          <div className="start-menu-item" onClick={() => handleApplicationClick(openAbout)}>
-            <FontAwesomeIcon icon={faTerminal} className="icon" />
-            <span>About</span>
-          </div>
-          <div className="start-menu-item" onClick={() => handleApplicationClick(openProjects)}>
-            <FontAwesomeIcon icon={faFolder} className="icon" />
-            <span>Projects</span>
-          </div>
-          <div className="start-menu-item" onClick={() => handleApplicationClick(openConnect)}>
-            <FontAwesomeIcon icon={faStickyNote} className="icon" />
-            <span>Connect</span>
-          </div>
-          <div className="start-menu-item" onClick={() => window.open('https://github.com/sohumcs', '_blank')}>
-            <FontAwesomeIcon icon={faGithub} className="icon" />
-            <span>GitHub</span>
-          </div>
-          <div className="start-menu-item" onClick={() => window.open('https://linkedin.com', '_blank')}>
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
-            <span>LinkedIn</span>
+          <div className="start-menu-grid">
+            <div className="start-menu-item large" onClick={() => handleApplicationClick(openAbout)}>
+              <FontAwesomeIcon icon={faTerminal} className="icon" />
+              <span>About</span>
+            </div>
+            <div className="start-menu-item medium" onClick={() => handleApplicationClick(openProjects)}>
+              <FontAwesomeIcon icon={faFolder} className="icon" />
+              <span>Projects</span>
+            </div>
+            <div className="start-menu-item small" onClick={() => handleApplicationClick(openConnect)}>
+              <FontAwesomeIcon icon={faStickyNote} className="icon" />
+              <span>Connect</span>
+            </div>
+            <div className="start-menu-item medium" onClick={() => window.open('https://github.com/sohumcs', '_blank')}>
+              <FontAwesomeIcon icon={faGithub} className="icon" />
+              <span>GitHub</span>
+            </div>
+            <div className="start-menu-item large" onClick={() => window.open('https://linkedin.com', '_blank')}>
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+              <span>LinkedIn</span>
+            </div>
           </div>
         </div>
       )}
