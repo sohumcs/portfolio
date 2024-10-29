@@ -83,12 +83,13 @@ body {
   cursor: pointer;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #f9f9f9;
+  background-color: white;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .projects-window {
-  background-color: #ffffff;
+  background-color: black;
   padding: 10px;
 }
 
@@ -110,8 +111,8 @@ body {
   margin-top: 10px;
   padding: 10px;
   border: 1px solid #444;
-  background-color: #2e2e2e;
-  color: #fff;
+  background-color: purple;
+  color: black;
   border-radius: 8px;
 }
 
@@ -151,14 +152,14 @@ body {
 }
 
 .notepad-window {
-  background-color: #f5f5dc; /* Notepad background */
+  background-color: black; /* Notepad background */
   font-family: 'Courier New', Courier, monospace; /* Notepad font */
   padding: 10px;
   border: 1px solid #ccc;
 }
 
 .connect-window .window-body {
-  background-color: #f5f5dc;
+  background-color: black;
   font-family: 'Courier New', Courier, monospace;
   padding: 10px;
   border: 1px solid #ccc;
