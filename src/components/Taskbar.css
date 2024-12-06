@@ -39,7 +39,7 @@
 }
 
 .taskbar-icon:nth-child(4) .fa-sticky-note {
-  color: #c5200e; /* Notepad red color */
+  color:  #f0a500; /* Notepad red color */
 }
 
 .taskbar-icon:hover {

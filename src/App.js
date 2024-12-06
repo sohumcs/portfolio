@@ -175,21 +175,23 @@ const App = () => {
                       <FontAwesomeIcon icon={faArrowLeft} /> Back
                     </button>
                     <div className="file">
-                      {selectedProject.name === 'Resume' ? (
-                        <>
-                          <FontAwesomeIcon icon={faFilePdf} className="file-icon" />
-                          <a href= "C:\Users\Sohum Srivastava\Desktop\portfolio\my-portfolio\public\Resume.pdf" target="_blank" rel="noopener noreferrer">
-                            View Resume
-                          </a>  
-                        </>
-                      ) : (
-                        <>
-                          <FontAwesomeIcon icon={faGithub} className="file-icon" />
-                          <a href={selectedProject.repoLink} target="_blank" rel="noopener noreferrer">
-                            GitHub Repo
-                          </a>
-                        </>
-                      )}
+                    {selectedProject.name === 'Resume' ? (
+  <>
+    <FontAwesomeIcon icon={faFilePdf} className="file-icon" />
+    <a href="/resume-sohum.pdf" target="_blank" rel="noopener noreferrer" download>
+  Download Resume
+</a>
+
+  </>
+) : (
+  <>
+    <FontAwesomeIcon icon={faGithub} className="file-icon" />
+    <a href={selectedProject.repoLink} target="_blank" rel="noopener noreferrer">
+      GitHub Repo
+    </a>
+  </>
+)}
+
                     </div>
                     <div className="file">
                       <FontAwesomeIcon icon={faBook} className="file-icon" />
