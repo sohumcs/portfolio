@@ -28,15 +28,10 @@ const Sidebar = ({ openAbout, openProjects, openConnect }) => {
         <FontAwesomeIcon icon={faLinkedin} className="icon" />
         <span className="icon-text">LinkedIn</span>
       </div>
-      <div className="icon-container" onClick={() => {
-  const link = document.createElement('a');
-  link.href = '/resume-sohum.pdf';  // Ensure this is the correct path
-  link.download = 'resume-sohum.pdf';  // This will trigger the download with the specified filename
-  link.click();
-}}>
-  <FontAwesomeIcon icon={faBook} className="icon" />
-  <span className="icon-text">Resume</span>
-</div>
+      <div className="icon-container" onClick={() => window.open('https://sohumcs-resume.tiiny.site/', '_blank')}>
+        <FontAwesomeIcon icon={faBook} className="icon" />
+        <span className="icon-text">Resume</span>
+      </div>
     </div>
   );
 };
